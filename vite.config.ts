@@ -5,4 +5,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/sak_frontend/",
   plugins: [react()],
+  //@ts-ignore
+  "process.env": process.env,
 });

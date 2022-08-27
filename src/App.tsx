@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { amplitude } from "./utils/amplitude";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
@@ -7,6 +8,10 @@ function App() {
 
   const throwKnownError = () => {
     throw new Error("this is a custom error from test");
+  };
+
+  const logClick = () => {
+    amplitude.getInstance().logEvent("amplitudeButtonClicked");
   };
 
   return (
@@ -32,6 +37,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <button onClick={() => throwKnownError()}>test sentry</button>
+      <button onClick={() => logClick()}>test amplitude</button>
     </div>
   );
 }
