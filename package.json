@@ -15,7 +15,8 @@
     "amplitude-js": "^8.20.0",
     "dotenv": "^16.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "theoderic_component": "^1.0.2"
   },
   "devDependencies": {
     "@types/amplitude-js": "^8.16.2",
